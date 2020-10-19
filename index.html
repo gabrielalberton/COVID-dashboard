@@ -46,4 +46,115 @@
             </li>
         </ul>
     </body>
+<html>
+ <head>
+    <style>
+    {
+        box-sizing: border-box;
+    }
+    /* Set additional styling options for the columns*/
+    .column {
+    float: left;
+    width: 50%;
+    }
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    </style>
+ </head>
+ <body>
+    <div class="row">
+        <div class="column" style="background-color:#FFB695;">
+            <h2>Column 1</h2>
+            <p>Data..</p>
+        </div>
+        <div class="column" style="background-color:#96D1CD;">
+            <h2>Column 2</h2>
+            <p>Data..</p>
+        </div>
+    </div>
+ </body>
 </html>
+Output:
+Column 1
+Data..
+
+Column 2
+Data..
+
+Multiple columns
+HTML also allows the creation of more than two columns in a single row; we can set varying widths for these columns by specifying them in the style sheet.
+
+
+ <head>
+    <style>
+    {
+        box-sizing: border-box;
+    }
+    /* Set additional styling options for the columns */
+    .column {
+    float: left;
+    }
+
+    /* Set width length for the left, right and middle columns */
+    .left {
+    width: 20%;
+    }
+
+    .middle {
+    width: 30%;
+    }
+    
+    .right {
+    width: 50%;
+    }
+
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+    </style>
+ </head>
+ <body>
+    <div class="row">
+        <div class="column left" style="background-color:#FFB695;">
+            <h2>Column 1</h2>
+                            <a href="https://gabrielalberton.github.io/COVID-dashboard/MT.html">MT</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/PA.html">PA</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/PB.html">PB</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/PE.html">PE</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/PI.html">PI</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/PR.html">PR</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/RJ.html">RJ</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/RN.html">RN</a></p>
+        </div>
+        <div class="column middle" style="background-color:#96D1CD;">
+            <h2>Column 2</h2>
+                            <a href="https://gabrielalberton.github.io/COVID-dashboard/MT.html">MT</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/PA.html">PA</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/PB.html">PB</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/PE.html">PE</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/PI.html">PI</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/PR.html">PR</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/RJ.html">RJ</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/RN.html">RN</a></p>
+        </div>
+        <div class="column right" style="background-color:#74C3E1;">
+            <h2>Column 3</h2>
+            <p>Data..</p>
+                            <a href="https://gabrielalberton.github.io/COVID-dashboard/MT.html">MT</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/PA.html">PA</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/PB.html">PB</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/PE.html">PE</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/PI.html">PI</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/PR.html">PR</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/RJ.html">RJ</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/RN.html">RN</a></p>
+        </div>
+    </div>
+ </body>
+</html>
+
