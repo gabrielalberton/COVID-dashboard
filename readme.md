@@ -1,5 +1,7 @@
 # [Deprecated since 20 Mar, 2020] Real-time charts for COVID-19 monitoring
 
+Fast created COVID-19 monitoring dashboard as soon as the first cases happened in Brazil (for personal purpose).
+
 Chart exemple:
 
 ![Chart exemple](exemple.jpg)
