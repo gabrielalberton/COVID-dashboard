@@ -2,7 +2,7 @@
 
 Chart exemple:
 
-[![Chart exemple](exemple.jpg)]
+![Chart exemple](exemple.jpg)
 
 https://gabrielalberton.github.io/COVID-dashboard/index.html
 
