@@ -14,21 +14,7 @@
                 <a href="https://gabrielalberton.github.io/COVID-dashboard/Estados_Suspeitos%.html">Estados_Suspeitos%</a></p>
                 <a href="https://gabrielalberton.github.io/COVID-dashboard/Estados_Suspeitos.html">Estados_Suspeitos</a></p>
                 <a href="https://gabrielalberton.github.io/COVID-dashboard/Estados_Suspeitos_lg.html">Estados_Suspeitos_lg</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/AC.html">AC</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/AL.html">AL</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/AM.html">AM</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/AP.html">AP</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/BA.html">BA</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/BR.html">BR</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/CE.html">CE</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/DF.html">DF</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/ES.html">ES</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/GO.html">GO</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/MA.html">MA</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/MG.html">MG</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/MS.html">MS</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/MT.html">MT</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/PA.html">PA</a></p>
+ <a href="https://gabrielalberton.github.io/COVID-dashboard/PA.html">PA</a></p>
                 <a href="https://gabrielalberton.github.io/COVID-dashboard/PB.html">PB</a></p>
                 <a href="https://gabrielalberton.github.io/COVID-dashboard/PE.html">PE</a></p>
                 <a href="https://gabrielalberton.github.io/COVID-dashboard/PI.html">PI</a></p>
@@ -43,49 +29,6 @@
                 <a href="https://gabrielalberton.github.io/COVID-dashboard/SP.html">SP</a></p>
                 <a href="https://gabrielalberton.github.io/COVID-dashboard/TO.html">TO</a></p>
 
-            </li>
-        </ul>
-    </body>
-<html>
- <head>
-    <style>
-    {
-        box-sizing: border-box;
-    }
-    /* Set additional styling options for the columns*/
-    .column {
-    float: left;
-    width: 50%;
-    }
-    .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    }
-    </style>
- </head>
- <body>
-    <div class="row">
-        <div class="column" style="background-color:#FFB695;">
-            <h2>Column 1</h2>
-            <p>Data..</p>
-        </div>
-        <div class="column" style="background-color:#96D1CD;">
-            <h2>Column 2</h2>
-            <p>Data..</p>
-        </div>
-    </div>
- </body>
-</html>
-Output:
-Column 1
-Data..
-
-Column 2
-Data..
-
-Multiple columns
-HTML also allows the creation of more than two columns in a single row; we can set varying widths for these columns by specifying them in the style sheet.
 
 
  <head>
@@ -116,36 +59,84 @@ HTML also allows the creation of more than two columns in a single row; we can s
     display: table;
     clear: both;
     }
+        
+    .bg {
+      position: relative;
+      height: 200px;
+      width: 400px;
+      padding: 4px;
+      background: orange;
+      overflow: hidden;
+    }
+    .bg:after,
+    .bg:before {
+      position: absolute;
+      content: '';
+      left: 0px;
+      height: 100%;
+      width: 100%;
+      transform-origin: right top;
+    }
+    .bg:before {
+      top: 0px;
+      background: red;
+      transform: skewY(-45deg);
+    }
+    .bg:after {
+      top: -100%;
+      background: yellow;
+      transform: skewY(-15deg);
+    }
+    span {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Just for demo */
+    .bg:hover {
+      height: 200px;
+      width: 500px;
+    }
     </style>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<div class="bg">
+  <span>Some content inside</span>
+</div>
  </head>
  <body>
     <div class="row">
-        <div class="column left" style="background-color:#FFB695;">
-            <h2>Column 1</h2>
-                            <a href="https://gabrielalberton.github.io/COVID-dashboard/MT.html">MT</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/PA.html">PA</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/PB.html">PB</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/PE.html">PE</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/PI.html">PI</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/PR.html">PR</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/RJ.html">RJ</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/RN.html">RN</a></p>
+        <div class="column left" style="background-color:#ffffff;">
+            <h2>Brazil and hightlights</h2>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/BR_lg.html">BR escala logarítmica</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/BR_nc.html">BR novos casos</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/Estados_Casos%.html">Estados_Casos%</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/Estados_Casos.html">Estados_Casos</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/Estados_Casos_lg.html">Estados_Casos_lg</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/Estados_Suspeitos%.html">Estados_Suspeitos%</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/Estados_Suspeitos.html">Estados_Suspeitos</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/Estados_Suspeitos_lg.html">Estados_Suspeitos_lg</a></p>
         </div>
-        <div class="column middle" style="background-color:#96D1CD;">
-            <h2>Column 2</h2>
-                            <a href="https://gabrielalberton.github.io/COVID-dashboard/MT.html">MT</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/PA.html">PA</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/PB.html">PB</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/PE.html">PE</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/PI.html">PI</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/PR.html">PR</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/RJ.html">RJ</a></p>
-                <a href="https://gabrielalberton.github.io/COVID-dashboard/RN.html">RN</a></p>
+        <div class="column middle" style="background-color:#ffffff;">
+            <h2>States</h2>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/AC.html">AC</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/AL.html">AL</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/AM.html">AM</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/AP.html">AP</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/BA.html">BA</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/BR.html">BR</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/CE.html">CE</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/DF.html">DF</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/ES.html">ES</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/GO.html">GO</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/MA.html">MA</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/MG.html">MG</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/MS.html">MS</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/MT.html">MT</a></p>
+               
         </div>
-        <div class="column right" style="background-color:#74C3E1;">
-            <h2>Column 3</h2>
-            <p>Data..</p>
-                            <a href="https://gabrielalberton.github.io/COVID-dashboard/MT.html">MT</a></p>
+        <div class="column right" style="background-color:#ffffff;">
+            <h2></h2>
+            <p></p>
                 <a href="https://gabrielalberton.github.io/COVID-dashboard/PA.html">PA</a></p>
                 <a href="https://gabrielalberton.github.io/COVID-dashboard/PB.html">PB</a></p>
                 <a href="https://gabrielalberton.github.io/COVID-dashboard/PE.html">PE</a></p>
@@ -153,6 +144,13 @@ HTML also allows the creation of more than two columns in a single row; we can s
                 <a href="https://gabrielalberton.github.io/COVID-dashboard/PR.html">PR</a></p>
                 <a href="https://gabrielalberton.github.io/COVID-dashboard/RJ.html">RJ</a></p>
                 <a href="https://gabrielalberton.github.io/COVID-dashboard/RN.html">RN</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/RO.html">RO</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/RR.html">RR</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/RS.html">RS</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/SC.html">SC</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/SE.html">SE</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/SP.html">SP</a></p>
+                <a href="https://gabrielalberton.github.io/COVID-dashboard/TO.html">TO</a></p>
         </div>
     </div>
  </body>
